@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
+    <UserSecretsId>aspnet-WebApplication1-A9D0BD4B-1C37-4D61-A12A-3EF350B219A9</UserSecretsId>
+    <ApplicationInsightsResourceId>/subscriptions/69801886-4b2b-493b-ba5b-3b26dabadadc/resourcegroups/anpete-test/providers/microsoft.insights/components/WebApplication1</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/69801886-4b2b-493b-ba5b-3b26dabadadc/resourcegroups/anpete-test/providers/microsoft.insights/components/WebApplication1</ApplicationInsightsAnnotationResourceId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Properties\PublishProfiles\CustomProfile.pubxml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0-preview1-24566" />
+    <!-- PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.0.0-preview1-24566" / -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0-preview1-24566" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+</Project>
